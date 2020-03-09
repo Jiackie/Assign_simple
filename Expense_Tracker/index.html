@@ -5,13 +5,173 @@
 
   <title>Document</title>
 
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:column;
+      flex-wrap: wrap;
+      background-color:#f7f7f7;
+    }
 
+    .main {
+      width: 400px;
+    }
+
+    #balance {
+      margin:0;
+    }
+
+    .main p {}
+
+    .inc_exp {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+
+      margin: 20px 0px;
+      padding:10px 10px;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+    }
+
+    .inc_exp div {
+      width:50%;
+      text-align:center;
+      padding:5px 0px 0px 0px;
+    }
+
+    #income {
+      border-right: 1px solid rgba(0,0,0,0.2);
+    }
+
+
+    #income p {
+      color:#58d68d;
+      font-size:20px;
+    }
+
+    #expense p {
+      color: #cb4335;
+      font-size:20px;
+    }
+
+    #history_title {
+      border-bottom:1px solid rgba(0,0,0,0.2);
+      margin: 40px 0px 30px;
+    }
+
+    .history_record > div{
+      display:flex;
+      flex-flow:row nowrap;
+      justify-content:space-between;
+
+
+      font-size: 1.17em;
+      margin: 12px 0px;
+      padding:10px 10px;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+    }
+
+    .history_record_income {
+      border-right: 5px solid #58d68d !important;
+    }
+
+    .history_record_expense {
+      border-right: 5px solid #cb4335 !important;
+    }
+
+    #transaction_title {
+      border-bottom:1px solid rgba(0,0,0,0.2);
+      margin: 40px 0px 30px;
+    }
+
+    .transaction_input input {
+      display:block;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+      width:100%;
+      font-size:16px;
+      padding:10px 0px;
+      margin:10px 0px;
+
+    }
+
+    .button {
+      background-color: #9c88ff;
+      font-size:16px;
+      color:white;
+      width:100%;
+      margin:10px 0px 30px;
+      border:0px;
+      padding:10px 0px;
+      box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+      cursor: pointer;
+    }
+
+
+
+  </style>
 </head>
 
 <body>
+  <h2>Expense Tracker</h2>
+  <div class="main">
+    <p><strong>YOUR BALANCE</strong></p>
 
-  <div>
-    <h1 align="center">Expense Tracker</h1>
+    <h1 id="balance">$-76010.00</h1><br>
+
+    <div class="inc_exp">
+      <div id="income">INCOME
+        <p>$666.00</p>
+      </div>
+      <div id="expense">EXPENSE
+        <p>$76676.00</p>
+      </div>
+    </div>
+
+    <div class="history">
+      <div id="history_title">
+        <h3>History</h3>
+      </div>
+      <div class="history_record">
+        <div class="history_record_income">
+          <div>food</div>
+          <div>+666</div>
+        </div>
+        <div class="history_record_expense">
+          <div>car</div>
+          <div>-76676</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new_transaction">
+      <div id="transaction_title">
+        <h3>Add new transaction</h3>
+      </div>
+
+      <form  method ="post">
+        <div class="transaction_input">
+          <label for="name">Text</label>
+          <input type="text" placeholder="  Enter text...">
+        </div>
+
+        <div class="transaction_input">
+          <label for="amount">Amount <br> (negative-expense, positive-income)</label>
+          <input type="number" placeholder="  Enter amount...">
+        </div>
+
+        <button type="button" class="button">Add transaction</button>
+
+      </form>
+
+    </div>
+
 
   </div>
 </body>
