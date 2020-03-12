@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+
+  <link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+  <h2>Expense Tracker</h2>
+  <div class="main">
+    <p><strong>YOUR BALANCE</strong></p>
+
+    <h1 id="balance">$-76010.00</h1><br>
+
+    <div class="inc_exp">
+      <div id="income">INCOME
+        <p>$666.00</p>
+      </div>
+      <div id="expense">EXPENSE
+        <p>$76676.00</p>
+      </div>
+    </div>
+
+    <div class="history">
+      <div id="history_title">
+        <h3>History</h3>
+      </div>
+      <div class="history_record">
+        <div class="history_record_income">
+          <div>food</div>
+          <div>+666</div>
+        </div>
+        <div class="history_record_expense">
+          <div>car</div>
+          <div>-76676</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new_transaction">
+      <div id="transaction_title">
+        <h3>Add new transaction</h3>
+      </div>
+
+      <form  method ="post">
+        <div class="transaction_input">
+          <label for="name">Text</label>
+          <input type="text" placeholder="  Enter text...">
+        </div>
+
+        <div class="transaction_input">
+          <label for="amount">Amount <br> (negative-expense, positive-income)</label>
+          <input type="number" placeholder="  Enter amount...">
+        </div>
+
+        <button type="button" class="button">Add transaction</button>
+
+      </form>
+
+    </div>
+
+
+  </div>
+</body>
+</html>

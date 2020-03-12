@@ -1,0 +1,115 @@
+/* Apply to the entire body of the HTML document. */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+  background-color:#f7f7f7;
+}
+
+
+/* Apply to the entire body of the HTML document. */
+.main {
+  width: 400px;
+}
+
+/* Apply to all the elements with <id = 'balance'> specified */
+#balance {
+  margin:0;
+}
+
+
+/* Apply to all the elements with <class = 'inc_exp'> specified */
+.inc_exp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+
+  margin: 20px 0px;
+  padding:10px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+}
+
+
+/* Apply to all the children "<div>" elements with <class = 'inc_exp'> specified */
+.inc_exp div {
+  width:50%;
+  text-align:center;
+  padding:5px 0px 0px 0px;
+}
+
+
+/* Apply to all the elements with <id = 'income'> specified */
+#income {
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+
+/* Apply to all the children "<p>" elements with <class = 'income'> specified */
+#income p {
+  color:#58d68d;
+  font-size:20px;
+}
+
+#expense p {
+  color: #cb4335;
+  font-size:20px;
+}
+
+#history_title {
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  margin: 40px 0px 30px;
+}
+
+.history_record > div{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between;
+
+
+  font-size: 1.17em;
+  margin: 12px 0px;
+  padding:10px 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+}
+
+.history_record_income {
+  border-right: 5px solid #58d68d !important;
+}
+
+.history_record_expense {
+  border-right: 5px solid #cb4335 !important;
+}
+
+#transaction_title {
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  margin: 40px 0px 30px;
+}
+
+.transaction_input input {
+  display:block;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+  width:100%;
+  font-size:16px;
+  padding:10px 0px;
+  margin:10px 0px;
+
+}
+
+.button {
+  background-color: #9c88ff;
+  font-size:16px;
+  color:white;
+  width:100%;
+  margin:10px 0px 30px;
+  border:0px;
+  padding:10px 0px;
+  box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
