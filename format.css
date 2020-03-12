@@ -6,12 +6,21 @@ body {
   flex-direction:column;
   flex-wrap: wrap;
   background-color:#f7f7f7;
+
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
 }
 
 
 /* Apply to the entire body of the HTML document. */
 .main {
-  width: 400px;
+  width: 350px;
+  margin:30px auto;
+}
+
+.main h4:first-child {
+  margin:0px;
 }
 
 /* Apply to all the elements with <id = 'balance'> specified */
@@ -27,7 +36,7 @@ body {
   justify-content: space-around;
 
   margin: 20px 0px;
-  padding:10px 10px;
+  padding:20px;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
@@ -41,6 +50,10 @@ body {
   padding:5px 0px 0px 0px;
 }
 
+.inc_exp p {
+  margin: 5px 0;
+}
+
 
 /* Apply to all the elements with <id = 'income'> specified */
 #income {
@@ -48,23 +61,45 @@ body {
 }
 
 
+/* Apply to all the elements with <class = 'delete_button'> specified */
+.delete_button {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  left:294px;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 /* Apply to all the children "<p>" elements with <class = 'income'> specified */
 #income p {
-  color:#58d68d;
+  color:#2ecc71;
   font-size:20px;
 }
 
+
+/* Apply to all the children "<p>" elements with <id = 'expense'> specified */
 #expense p {
-  color: #cb4335;
+  color: #c0392b;
   font-size:20px;
 }
 
+
+/* Apply to all the elements with <id = 'history_title'> specified */
 #history_title {
   border-bottom:1px solid rgba(0,0,0,0.2);
   margin: 40px 0px 30px;
 }
 
-.history_record > div{
+
+/* Apply to all the next children "<div>" elements with <class = 'history_record'> specified */
+.history_record > div,  .history_record > button{
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
@@ -78,19 +113,27 @@ body {
   box-shadow: 2px 2px 1px 0px rgba(0,0,0,0.4);
 }
 
+
+/* Apply to all the elements with <class = 'history_record_income'> specified */
 .history_record_income {
-  border-right: 5px solid #58d68d !important;
+  border-right: 5px solid #2ecc71 !important;
 }
 
+
+/* Apply to all the elements with <class = 'history_record_expense'> specified */
 .history_record_expense {
-  border-right: 5px solid #cb4335 !important;
+  border-right: 5px solid #c0392b !important;
 }
 
+
+/* Apply to all the elements with <id = 'transaction_title'> specified */
 #transaction_title {
   border-bottom:1px solid rgba(0,0,0,0.2);
   margin: 40px 0px 30px;
 }
 
+
+/* Apply to all the children "<input>" elements with <class = 'transaction_input'> specified */
 .transaction_input input {
   display:block;
   border: 1px solid rgba(0,0,0,0.1);
@@ -102,6 +145,8 @@ body {
 
 }
 
+
+/* Apply to all the elements with '<button>' elements specified */
 .button {
   background-color: #9c88ff;
   font-size:16px;
