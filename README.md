@@ -8,9 +8,12 @@ This project is to help you maintain your personal finance. The simple idea is, 
 
 - index.html
 - format.css
-- .js(later)
+- profit.js
 
-## Status
+## Features
 
-Static Assets Setup w/ CSS file.
-
+- Total Balance updates
+- Income Balance updates
+- Expense Balance updates
+- Add new transaction
+- Delete exist transaction
