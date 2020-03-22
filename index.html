@@ -13,35 +13,34 @@
   <div class="main">
     <h4>YOUR BALANCE</h4>
 
-    <h1 id="balance">$-76010.00</h1>
+    <h1 id="balance">$0</h1>
 
     <div class="inc_exp">
       <div id="income">
         <h4>INCOME</h4>
-        <p>$666.00</p>
+        <p id="income_value">$0.00</p>
       </div>
       <div id="expense">
         <h4>EXPENSE</h4>
-        <p>$76676.00</p>
+        <p id="expense_value">$0.00</p>
       </div>
     </div>
 
-    <div class="history">
+    <div class = 'history'>
       <div id="history_title">
         <h3>History</h3>
       </div>
-      <div class="history_record">
-        <div class="history_record_income">
+      <div class="history_record" id = 'historydiv'>
+        <!-- <div class="history_record_income">
+          <button class = "delete_button">x</button>
           <div>food</div>
-          <div>+666</div>
+          <div>+0</div>
+        </div> -->
+        <!-- <div class="history_record_expense">
           <button class = "delete_button">x</button>
-
-        </div>
-        <div class="history_record_expense">
           <div>car</div>
-          <div>-76676</div>
-          <button class = "delete_button">x</button>
-        </div>
+          <div>-0</div>
+        </div> -->
       </div>
     </div>
 
@@ -53,21 +52,20 @@
       <form  method ="post">
         <div class="transaction_input">
           <label for="name">Text</label>
-          <input type="text" placeholder="  Enter text...">
+          <input id="text" type="text" placeholder="  Enter text..." required>
         </div>
 
         <div class="transaction_input">
           <label for="amount">Amount <br> (negative-expense, positive-income)</label>
-          <input type="number" placeholder="  Enter amount...">
+          <input id="amount" type="number" placeholder="  Enter amount..." required>
         </div>
 
-        <button type="button" class="button">Add transaction</button>
+        <button type="button" class="button" onclick="expenseObj.addNew()">Add transaction</button>
 
       </form>
 
     </div>
-
-
   </div>
+  <script type="text/javascript" src = 'profit.js'></script>
 </body>
 </html>

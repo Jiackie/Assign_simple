@@ -70,22 +70,26 @@ body {
   font-size: 20px;
   line-height: 20px;
   padding: 2px 5px;
-  position: absolute;
-  left:294px;
-  transform: translate(-100%, -50%);
   opacity: 0;
+  position: absolute;
+  float:left;
+  transform: translate(-155%, -5%);
   transition: opacity 0.3s ease;
 }
 
+.history_record>div:hover button{
+  opacity:1;
+}
+
 /* Apply to all the children "<p>" elements with <class = 'income'> specified */
-#income p {
+#income_value {
   color:#2ecc71;
   font-size:20px;
 }
 
 
 /* Apply to all the children "<p>" elements with <id = 'expense'> specified */
-#expense p {
+#expense_value {
   color: #c0392b;
   font-size:20px;
 }
@@ -97,9 +101,13 @@ body {
   margin: 40px 0px 30px;
 }
 
+.history_record_income > div, .history_record_expense > div{
+  display: inline-block;
+}
+
 
 /* Apply to all the next children "<div>" elements with <class = 'history_record'> specified */
-.history_record > div,  .history_record > button{
+.history_record > div{
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
