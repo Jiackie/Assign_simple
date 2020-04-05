@@ -5,10 +5,16 @@ This project is to help you maintain your personal finance. The simple idea is, 
 
 ## Features
 Total Balance updates
+
 Income Balance updates
+
 Expense Balance updates
+
 Add new transaction
+
 Delete exist transactionThis is react version;
+
+## Install
 
 In the project directory, you can run following to deploy the result:
 
