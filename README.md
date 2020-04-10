@@ -14,9 +14,15 @@ Add new transaction
 
 Delete exist transactionThis is react version;
 
+Add unit test and auto test;
+
 ## Install
 
 In the project directory, you can run following to deploy the result:
 
-#### `npm i`
-#### `npm start`
+`npm i`
+`npm start`
+
+In order to run the autotest, running
+`npm run test`
+(Because puppeteer library is too big, you need to install puppeteer in your local path.)

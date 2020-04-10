@@ -189,19 +189,19 @@ describe('puppeteer testing', () => {
     await page.click('#submit_btn');
 
     await page.click('input#text');
-    await page.type('input#text', 'tax return');
+    await page.type('input#text', 'house decoration');
     await page.click('input#amount');
-    await page.type('input#amount', '132.22');
+    await page.type('input#amount', '-132.22');
     await page.click('#submit_btn');
 
     await page.click('input#text');
-    await page.type('input#text', 'tax return');
+    await page.type('input#text', 'refund');
     await page.click('input#amount');
     await page.type('input#amount', '132.22');
     await page.click('#submit_btn');
 
     const finalTest = await page.$eval('.income_value', e => e.textContent);
-    expect(finalTest).toBe('$ 396.66');
+    expect(finalTest).toBe('$ 264.44');
     
   
     await browser.close();
