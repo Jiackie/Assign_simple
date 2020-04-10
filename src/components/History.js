@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import HisList from "./HisList";
 import { getHists } from "../redux/selectors";
 
-const History = ({ newhist }) => (
+export const History = ({ newhist }) => (
   <div>
     <h3 className="history_title">History</h3>
         <ul>

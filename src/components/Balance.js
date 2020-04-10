@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { getHists } from "../redux/selectors";
 
-const Balance = ({ newhist }) => (
+export const Balance = ({ newhist }) => (
   <div>
     <h4 className="no-margin">
       YOUR BALANCE

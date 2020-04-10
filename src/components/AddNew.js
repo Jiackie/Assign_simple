@@ -19,6 +19,7 @@ function AddNew (props) {
       <label>Text</label>
       <input
         type="text"
+        id="text"
         placeholder="  Enter text..."
         className="transaction_input"
         value={text}
@@ -27,6 +28,7 @@ function AddNew (props) {
       <label>Amount <br/> (negative-expense, positive-income)</label>
       <input
         type="number"
+        id="amount"
         placeholder="  Enter amount..."
         className="transaction_input"
         value={amount}
@@ -34,6 +36,7 @@ function AddNew (props) {
       />
       <button
         className="btn"
+        id="submit_btn"
         onClick={handleAddNew}>
         Add transaction
       </button>

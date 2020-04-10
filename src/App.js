@@ -6,11 +6,11 @@ import AddNew from "./components/AddNew";
 
 export default function App() {
   return (
-    <div>
+    <React.Fragment>
       <h2>Expense Tracker</h2>
       <Balance />
       <History />
       <AddNew />
-    </div>
+    </React.Fragment>
   );
 }
